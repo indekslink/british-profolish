@@ -51,3 +51,17 @@ function activeMenu(scroll) {
     }
   });
 }
+
+// add lightbox
+const containerImgLightBox = document.querySelectorAll(".flexbin");
+containerImgLightBox.forEach((container, i) => {
+  container.setAttribute("id", `lightbox-${i}`);
+  let imgItem = document.querySelectorAll(`#lightbox-${i} img`);
+  imgItem.forEach((img) => {
+    let src = img.getAttribute("src");
+    let caption = img.nextElementSibling.innerHTML;
+    img.parentElement.setAttribute("href", src);
+    img.parentElement.setAttribute("data-fancybox", "lightbox-" + i);
+    img.parentElement.setAttribute("data-caption", caption);
+  });
+});

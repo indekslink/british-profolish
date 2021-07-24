@@ -1,5 +1,11 @@
 @media (max-width: 991px) {
-    /* nav a.active {
+  /* nav a.active {
         text-shadow: none !important;
     } */
+}
+
+@media (max-width: 569px) {
+  #loader {
+    flex-direction: column;
+  }
 }
