@@ -65,3 +65,28 @@ containerImgLightBox.forEach((container, i) => {
     img.parentElement.setAttribute("data-caption", caption);
   });
 });
+
+function toggleMyModal(target, add = null) {
+  const myModal = document.querySelector(target);
+  if (add) {
+    var fnstring = add;
+
+    // find object
+    var fn = window[fnstring];
+
+    // is object a function?
+    if (typeof fn === "function"){
+
+      myModal.innerHTML = fn();
+    };
+
+  }
+  myModal.classList.toggle("show");
+
+  setTimeout(() => {
+    document.body.classList.toggle("overflow-hidden");
+    if (add == null) {
+      myModal.innerHTML = "";
+    }
+  }, 1000);
+}

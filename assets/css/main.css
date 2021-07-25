@@ -214,7 +214,9 @@ section.mark-content .first .column > * {
 section.mark-content .first .column .value {
   opacity: 0.7;
 }
-
+.cursor-pointer {
+  cursor: pointer;
+}
 .flexbin a {
   position: relative;
   overflow: hidden;
@@ -261,7 +263,7 @@ section.information i {
 }
 footer {
   font-size: 14px;
-  background: var(--dark);
+  background: var(--darkNav);
 }
 footer li,
 footer a {
@@ -271,4 +273,37 @@ footer a {
 footer a:hover {
   text-decoration: underline;
   text-decoration-color: var(--primary);
+}
+.my-modal {
+  position: fixed;
+  overflow: auto;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  top: 100vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 999999;
+}
+.my-modal.show {
+  top: 0;
+}
+.my-modal .my-modal-header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 5;
+  padding: 1rem 0;
+  justify-content: space-between;
+  align-items: center;
+  font: 2rem;
+  border-bottom: 2px solid lightgray;
+}
+#hikvision .card-body {
+  padding: 1rem 0.5rem 0 !important;
+}
+#hikvision li.list-group-item {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
