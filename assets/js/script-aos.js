@@ -24,7 +24,6 @@ informationProduk.forEach((ip, i) => {
 
 KontenLayananKami.forEach((kl, i) => {
   kl.dataset.aos = "zoom-out-right";
-  kl.dataset.aosDelay = (i + 1) * 100;
 });
 
 titleSection.forEach((title) => {
