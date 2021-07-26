@@ -109,3 +109,7 @@ function showMoreAbout(e) {
     showAnimate = false;
   }
 }
+
+document.querySelector(".to-layanan").addEventListener("click", function () {
+  window.scrollTo(0, document.getElementById("service").offsetTop - 50);
+});

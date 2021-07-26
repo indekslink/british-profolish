@@ -33,4 +33,5 @@ titleSection.forEach((title) => {
 
 AOS.init({
   easing: "ease-in-sine",
+  once: true,
 });
