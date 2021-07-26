@@ -43,7 +43,7 @@ function cctv() {
           <div class="my-3 fs-4 fw-bold text-center">Harga Paket CCTV</div>
           <nav>
             <div
-              class="nav nav-tabs justify-content-center flex-nowrap fs-5"
+              class="nav nav-tabs justify-content-center flex-nowrap fs-6"
               id="nav-tab"
               role="tablist"
             >

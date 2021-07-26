@@ -9,7 +9,7 @@ navlink.forEach((nav) => {
     e.preventDefault();
     const el = document.querySelector(`.${nav.getAttribute("data-area")}`);
     if (el) {
-      window.scrollTo(0, el.offsetTop - 60);
+      window.scrollTo(0, el.offsetTop - 50);
     }
   });
 });
@@ -36,6 +36,7 @@ window.onscroll = () => {
   toTop.classList.toggle("show", scroll > 100);
 };
 
+// scrollspy
 function activeMenu(scroll) {
   navlink.forEach((nav) => {
     const el = document.querySelector(`.${nav.getAttribute("data-area")}`);
@@ -75,11 +76,9 @@ function toggleMyModal(target, add = null) {
     var fn = window[fnstring];
 
     // is object a function?
-    if (typeof fn === "function"){
-
+    if (typeof fn === "function") {
       myModal.innerHTML = fn();
-    };
-
+    }
   }
   myModal.classList.toggle("show");
 
@@ -89,4 +88,24 @@ function toggleMyModal(target, add = null) {
       myModal.innerHTML = "";
     }
   }, 1000);
+}
+let showAnimate = true;
+
+function showMoreAbout(e) {
+  e.innerHTML = e.classList.contains("collapsed") ? "Read More" : "Read Less";
+
+  if (showAnimate) {
+    const areaReadMore = document.getElementById("tentang-kami-selengkapnya");
+    gsap.from("#tentang-kami-selengkapnya span", {
+      duration: 1,
+      x: "-100%",
+      opacity: 0,
+    });
+    gsap.from("#tentang-kami-selengkapnya p, #tentang-kami-selengkapnya ul", {
+      duration: 1,
+      y: "100%",
+      opacity: 0,
+    });
+    showAnimate = false;
+  }
 }

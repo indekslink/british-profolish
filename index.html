@@ -30,6 +30,9 @@
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
 
+    <!-- aos css -->
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css" />
+
     <!-- my css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 
@@ -116,16 +119,30 @@
     <div class="area-home">
       <div id="hero-image">
         <div class="container text-center text-light">
-          <div class="title my-2 display-5 fw-bold">British Propolish</div>
-          <div class="desc my-2 fs-5">Spesialis untuk Stamina Makin Prima</div>
+          <div
+            class="title my-2 display-5 fw-bold"
+            data-aos="fade-down"
+            data-aos-delay="500"
+          >
+            British Propolish
+          </div>
+          <div class="desc my-2 fs-5" data-aos="fade-down" data-aos-delay="700">
+            Spesialis untuk Stamina Makin Prima
+          </div>
           <div class="action my-3">
-            <button class="btn btn-my-info my-1 me-2">
+            <button
+              data-aos="fade-up"
+              data-aos-delay="900"
+              class="btn btn-my-info btn-lg my-1 me-2"
+            >
               Layanan <i class="fas fa-angle-right"></i>
             </button>
             <a
+              data-aos="fade-up"
+              data-aos-delay="1100"
               href="https://api.whatsapp.com/send?phone=6281280533882"
               target="_blank"
-              class="btn btn-outline-my-info text-light my-1"
+              class="btn btn-outline-my-info btn-lg text-light my-1"
             >
               Hubungi Kami <i class="fas fa-angle-right"></i>
             </a>
@@ -142,7 +159,7 @@
           <div class="row mt-2 g-4">
             <div class="col-lg-6">
               <div class="text-desc">
-                <p>
+                <p data-aos="fade-up">
                   <span class="fw-bold fs-5">British Propolish</span> adalah
                   perusahaan yang mensupply kebutuhan IT Hardware & Software,
                   salah satunya seperti mengimport Nurse Call, Nurse Call
@@ -152,7 +169,7 @@
                   <b>British Propolish</b> dalam memberikan layanan informasi
                   dan teknologi terbaik.
                 </p>
-                <p>
+                <p data-aos="fade-up">
                   <b>British Propolish</b> merupakan sebuah perusahaan One Stop
                   IT Service Provider dengan kapasitas layanan informasi dan
                   teknologi yang sepenuhnya dapat disesuaikan dengan kebutuhan
@@ -167,6 +184,7 @@
                     class="
                       border-start border-3 border-info
                       rounded- rounded-start
+                      d-block
                       fs-5
                       px-2
                       py-1
@@ -186,6 +204,7 @@
                     class="
                       border-start border-3 border-info
                       rounded- rounded-start
+                      d-block
                       fs-5
                       px-2
                       py-1
@@ -214,7 +233,8 @@
                   </ul>
                 </div>
                 <button
-                  onclick="this.classList.contains('collapsed') ? this.innerHTML='Read More' : this.innerHTML='Read Less'"
+                  data-aos="fade-up"
+                  onclick="showMoreAbout(this)"
                   class="btn btn-outline-my-info collapsed"
                   data-bs-toggle="collapse"
                   data-bs-target="#tentang-kami-selengkapnya"
@@ -223,7 +243,10 @@
                 </button>
               </div>
             </div>
-            <div class="col-lg-6 d-flex align-items-center">
+            <div
+              class="col-lg-6 d-flex align-items-center"
+              data-aos="fade-left"
+            >
               <img src="./assets/files/2.jpeg" alt="" class="img-fluid" />
             </div>
           </div>
@@ -359,31 +382,31 @@
           >
             <div class="col-md-6">
               <div class="row g-3 h-100">
-                <div class="col-12">
+                <div class="col-12 list">
                   <div class="item fs-4">
                     <i class="far fa-dot-circle"></i>
                     <span>STANDAR INTERNASIONAL</span>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 list">
                   <div class="item fs-4">
                     <i class="far fa-dot-circle"></i>
                     <span>NON ALCOHOL</span>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 list">
                   <div class="item fs-4">
                     <i class="far fa-dot-circle"></i>
                     <span>HALAL</span>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 list">
                   <div class="item fs-4">
                     <i class="far fa-dot-circle"></i>
-                    <span>NON MLM</span>
+                    <span>NON MLM (Multi Level Marketing)</span>
                   </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 list">
                   <div class="item fs-4">
                     <i class="far fa-dot-circle"></i>
                     <span>BERIJIN BPOM</span>
@@ -393,6 +416,8 @@
             </div>
             <div class="col-md-6">
               <img
+                data-aos="fade-left"
+                data-aos-delay="100"
                 src="./assets/images/produk/product.png"
                 class="img-fluid"
                 alt=""
@@ -406,7 +431,7 @@
           <div class="display-5 text-my-info text-center fw-bold">
             Dokumentasi Produk
           </div>
-          <div class="fs-4 text-center text-muted">
+          <div class="fs-4 text-center text-muted" data-aos="fade-up">
             Berikut beberapa produk yang kita miliki
           </div>
           <div class="flexbin flexbin-margin mt-4">
@@ -577,12 +602,13 @@
                 text-center
               "
             >
-              <div class="fw-bold fs-3">
+              <div class="fw-bold fs-3" data-aos="fade-up">
                 Ada Pertanyaan <i class="fas fa-question"></i>
               </div>
-              <div class="fs-4">Segera hubungi kami !</div>
+              <div class="fs-4" data-aos="fade-up">Segera hubungi kami !</div>
               <div class="mt-2">
                 <a
+                  data-aos="fade-right"
                   href="tel:081280533882"
                   class="
                     btn btn-my-info
@@ -595,6 +621,7 @@
                   <i class="fas fa-phone-alt me-2"></i> Telepon
                 </a>
                 <a
+                  data-aos="fade-left"
                   href="https://api.whatsapp.com/send?phone=6281280533882"
                   target="_blank"
                   class="
@@ -610,6 +637,7 @@
             </div>
             <div class="col-md-6">
               <iframe
+                data-aos="zoom-in-up"
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126918.78698203976!2d106.8695552!3d-6.2357504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd65d5de3b4186d%3A0xc5b5532c0b72f56a!2sJl.%20Argopuro%20No.90%2C%20Tompokersan%2C%20Kec.%20Lumajang%2C%20Kabupaten%20Lumajang%2C%20Jawa%20Timur%2067316!5e0!3m2!1sid!2sid!4v1627113582074!5m2!1sid!2sid"
                 class="w-100"
                 height="300"
@@ -662,8 +690,15 @@
     </script>
     <!-- fancybox -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 
     <script src="./assets/js/modal-layanan-kami.js"></script>
+
+    <!-- aos  -->
+    <script src="./assets/vendor/aos/aos.js"></script>
+    <script src="./assets/js/script-aos.js"></script>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

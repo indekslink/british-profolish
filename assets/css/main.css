@@ -175,6 +175,13 @@ nav.scroller .dropdown-menu {
   background-color: var(--lightwhite);
   border-radius: 50%;
 }
+.area-home,
+.area-profil,
+.area-produk,
+.area-galeri,
+.area-kontak {
+  overflow: hidden;
+}
 section.mark-content {
   background-image: url(../images/bg-hero.jpg);
   background-repeat: no-repeat;
