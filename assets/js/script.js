@@ -13,6 +13,15 @@ navlink.forEach((nav) => {
     }
   });
 });
+document
+  .querySelector("a.navbar-brand")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    const el = document.querySelector(`.${e.target.getAttribute("data-area")}`);
+    if (el) {
+      window.scrollTo(0, el.offsetTop - 50);
+    }
+  });
 
 toggleMenu.addEventListener("click", function () {
   this.classList.toggle("show");
