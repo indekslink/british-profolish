@@ -19,7 +19,7 @@ function cctv() {
             </div>
             <div class="col-md-6">
               <p>
-                <b>British Propolish</b> adalah salah satu pioner jasa
+                <b>Widya Multilink Smart IT Business</b> adalah salah satu pioner jasa
                 pemasangan kamera cctv terbaik dan terpercaya di Indonesia yang
                 bergaransi resmi. Berkontribusi dalam pemasangan kamera cctv
                 untuk skala besar maupun kecil.
