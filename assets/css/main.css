@@ -284,7 +284,7 @@ footer a:hover {
 .my-modal {
   position: fixed;
   overflow: auto;
-  transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   top: 100vh;
   left: 0;
   right: 0;

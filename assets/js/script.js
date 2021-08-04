@@ -76,27 +76,14 @@ containerImgLightBox.forEach((container, i) => {
   });
 });
 
-function toggleMyModal(target, add = null) {
+function toggleMyModal(target) {
   const myModal = document.querySelector(target);
-  if (add) {
-    var fnstring = add;
 
-    // find object
-    var fn = window[fnstring];
-
-    // is object a function?
-    if (typeof fn === "function") {
-      myModal.innerHTML = fn();
-    }
-  }
   myModal.classList.toggle("show");
 
   setTimeout(() => {
     document.body.classList.toggle("overflow-hidden");
-    if (add == null) {
-      myModal.innerHTML = "";
-    }
-  }, 1000);
+  }, 500);
 }
 let showAnimate = true;
 
@@ -104,7 +91,6 @@ function showMoreAbout(e) {
   e.innerHTML = e.classList.contains("collapsed") ? "Read More" : "Read Less";
 
   if (showAnimate) {
-    const areaReadMore = document.getElementById("tentang-kami-selengkapnya");
     gsap.from("#tentang-kami-selengkapnya span", {
       duration: 1,
       x: "-100%",
