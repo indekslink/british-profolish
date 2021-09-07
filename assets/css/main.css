@@ -314,3 +314,7 @@ footer a:hover {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+.flexbin > * {
+  margin: 0.5rem !important;
+  border-radius: 10px;
+}

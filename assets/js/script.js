@@ -63,6 +63,7 @@ function activeMenu(scroll) {
 }
 
 // add lightbox
+// const containerImgLightBox = document.querySelectorAll(".flexbin");
 const containerImgLightBox = document.querySelectorAll(".flexbin");
 containerImgLightBox.forEach((container, i) => {
   container.setAttribute("id", `lightbox-${i}`);

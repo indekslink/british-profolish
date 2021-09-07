@@ -8,4 +8,7 @@
   #loader {
     flex-direction: column;
   }
+  .my-grid {
+    columns: 2;
+  }
 }
