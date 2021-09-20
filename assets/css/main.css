@@ -322,3 +322,15 @@ footer a:hover {
   margin: 0.5rem !important;
   border-radius: 5px;
 }
+/* .area-produk .my-grid{
+  column-gap: 1rem;
+
+  overflow: auto;
+  columns:5;
+}
+.area-produk .my-grid a{
+display: inline-block;
+}
+.area-produk .my-grid a img{
+  width: 100%;
+} */
